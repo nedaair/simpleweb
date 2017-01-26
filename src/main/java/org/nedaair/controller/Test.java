@@ -8,12 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by nedaair on 2017. 1. 26..
  */
-@Controller("/board/*")
+@Controller
 public class Test {
     private static final Logger logger = LoggerFactory.getLogger(Test.class);
 
+
+    {
+        logger.info("18");
+    }
+
     @RequestMapping("/register")
-    public String index(){
+    public String register(){
         logger.info("test");
         return "index";
     }
